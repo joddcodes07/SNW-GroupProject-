@@ -1,0 +1,193 @@
+!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services - WaterWiz</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body class="service-page-body">
+    <nav class="navbar">
+      <div class="logo">Water<span class="magic">Wiz.</span></div>
+      <ul class="nav-links">
+         <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html">Contact</a></li>
+     <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+
+    <div class="main-container">
+      <aside class="sidebar-left">
+        <h3>Select a Service</h3>
+        <ul class="category-list">
+          <li class="active-cat" onclick="scrollToSection('taps')">
+            <span class="material-symbols-outlined">water_drop</span>
+            <span>Taps & Mixers</span>
+          </li>
+          <li onclick="scrollToSection('toilets')">
+            <span class="material-symbols-outlined">wc</span>
+            <span>Toilets</span>
+          </li>
+          <li onclick="scrollToSection('basins')">
+            <span class="material-symbols-outlined">wash</span>
+            <span>Basins & Sinks</span>
+          </li>
+          <li onclick="scrollToSection('drains')">
+            <span class="material-symbols-outlined">plumbing</span>
+            <span>Drainage</span>
+          </li>
+          <li onclick="scrollToSection('tanks')">
+            <span class="material-symbols-outlined">water_heater</span>
+            <span>Water Tanks</span>
+          </li>
+        </ul>
+      </aside>
+
+      <main class="services-feed" id="mainFeed">
+        <div id="taps" class="service-category">
+          <h2>Tap & Mixer</h2>
+
+          <div class="service-item">
+            <div class="item-details">
+              <h4>Tap Repair</h4>
+              <div class="rating">⭐ 4.81 (18K reviews)</div>
+              <div class="price">Starts at ₹79</div>
+              <a href="#" class="details-link">View details</a>
+            </div>
+            <div class="item-action">
+              <img
+                src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=150&q=80"
+                alt="Tap"
+              />
+              <button class="add-btn" data-name="Tap Repair" data-price="79">
+                Add
+              </button>
+            </div>
+          </div>
+
+          <div class="service-item">
+            <div class="item-details">
+              <h4>Tap Installation</h4>
+              <div class="rating">⭐ 4.79 (26K reviews)</div>
+              <div class="price">₹89 • 45 mins</div>
+              <a href="#" class="details-link">View details</a>
+            </div>
+            <div class="item-action">
+              <img
+                src="https://images.unsplash.com/photo-1616165846985-5b48dc9a4732?auto=format&fit=crop&w=150&q=80"
+                alt="Tap Install"
+              />
+              <button
+                class="add-btn"
+                data-name="Tap Installation"
+                data-price="89"
+              >
+                Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <hr class="divider" />
+
+        <div id="toilets" class="service-category">
+          <h2>Toilet Repair & Install</h2>
+
+          <div class="service-item">
+            <div class="item-details">
+              <h4>Western Toilet Install</h4>
+              <div class="rating">⭐ 4.85 (5K reviews)</div>
+              <div class="price">Starts at ₹399</div>
+              <a href="#" class="details-link">View details</a>
+            </div>
+            <div class="item-action">
+              <img
+                src="https://images.unsplash.com/photo-1563297745-f0bb00204739?auto=format&fit=crop&w=150&q=80"
+                alt="Toilet"
+              />
+              <button
+                class="add-btn"
+                data-name="Western Toilet Install"
+                data-price="399"
+              >
+                Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <hr class="divider" />
+
+        <div id="basins" class="service-category">
+          <h2>Basins & Sinks</h2>
+          <div class="service-item">
+            <div class="item-details">
+              <h4>Wash Basin Clog</h4>
+              <div class="rating">⭐ 4.72 (12K reviews)</div>
+              <div class="price">₹129</div>
+            </div>
+            <div class="item-action">
+              <img
+                src="https://images.unsplash.com/photo-1604561706689-d1066c0d0246?auto=format&fit=crop&w=150&q=80"
+                alt="Basin"
+              />
+              <button
+                class="add-btn"
+                data-name="Wash Basin Clog"
+                data-price="129"
+              >
+                Add
+              </button>
+            </div>
+          </div>
+          <div style="height: 300px"></div>
+        </div>
+      </main>
+
+      <aside class="sidebar-right">
+        <div class="cart-box">
+          <div class="cart-empty-state">
+            <span
+              class="material-symbols-outlined"
+              style="font-size: 40px; color: #ccc"
+              >shopping_cart</span
+            >
+            <p>No items in your cart</p>
+          </div>
+        </div>
+
+        <div class="promise-box">
+          <h4>WaterWiz Promise</h4>
+          <ul class="promise-list">
+            <li>
+              <span class="material-symbols-outlined check-icon"
+                >check_circle</span
+              >
+              Verified Professionals
+            </li>
+            <li>
+              <span class="material-symbols-outlined check-icon"
+                >check_circle</span
+              >
+              Hassle Free Booking
+            </li>
+            <li>
+              <span class="material-symbols-outlined check-icon"
+                >check_circle</span
+              >
+              Transparent Pricing
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
