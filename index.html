@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WaterWiz.</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Water<span class="magic">Wiz.</span></div>
+      <ul class="nav-links">
+        <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html">Contact</a></li>
+     <li><a href="about.html">About Us</a></li>
+</ul>
+      </ul>
+    </nav>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Plumbing Problems? <span class="highlight">Vanished.</span></h1>
+        <p>
+          Expert repairs, leak detection, and installations. The magic touch for
+          your pipes.
+        </p>
+        <div class="hero-buttons">
+          <a href="#" id="openModalBtn" class="btn primary-btn">Get a Quote</a>
+          <a href="services.html" class="btn secondary-btn">Our Services</a>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <div class="logo">Water<span class="magic">Wiz.</span></div>
+          <p class="footer-text">
+            Your trusted partners for magical plumbing solutions. Leak
+            detection, repairs, and installations done right.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contact Us</h3>
+          <p>123 Pipe Lane, Water City</p>
+          <p>Email: hello@waterwiz.com</p>
+          <p>Phone: (555) 123-4567</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 WaterWiz. All rights reserved.</p>
+      </div>
+    </footer>
+    <div id="quoteModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Get a Free Quote</h2>
+        <p>
+          Describe your plumbing issue and we'll get back to you magically fast!
+        </p>
+
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your Name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Your Email" required />
+
+          <label for="message">Problem Description</label>
+          <textarea
+            id="message"
+            rows="4"
+            placeholder="Leaky faucet, pipe burst, etc."
+            required
+          ></textarea>
+
+          <button type="submit" class="btn primary-btn submit-btn">
+            Send Request
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
